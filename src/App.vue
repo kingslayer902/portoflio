@@ -15,7 +15,7 @@ import Navbar from './components/Navbar.vue';
 import AboutSection from './components/AboutSection.vue';
 import ProjectsSection from './components/ProjectSection.vue';
 import Footer from './components/Footer.vue';
-import HeroSection from './components/heroSection.vue';
+import HeroSection from './components/HeroSection.vue';
 
 export default {
   components: {
