@@ -1,8 +1,7 @@
 <template>
   <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 
-    bg-gradient-to-b from-white to-gray-50 
-    dark:from-gray-800 dark:to-gray-700">
-    
+    bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+
     <img
       src="/ezra.jpg"
       alt="Foto Ezra"
@@ -11,7 +10,7 @@
     <h1 class="text-3xl md:text-5xl font-bold mb-2 animate-slide-in">
       Mochamad Ezra Saptiawan
     </h1>
-    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-200 animate-fade-in delay-200">
+    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 animate-fade-in delay-200">
       Frontend & Fullstack Developer | Administrator Kantor
     </p>
     <a
