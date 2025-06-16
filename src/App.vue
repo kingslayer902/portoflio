@@ -4,6 +4,7 @@
     <ProjectSection />
     <AboutSection />
     <FooterSection />
+    <Navbar/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import ProjectSection from './components/ProjectSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     HeroSection,
     AboutSection,
     ProjectSection,
-    FooterSection
+    FooterSection,
+    Navbar
   }
 }
 </script>
