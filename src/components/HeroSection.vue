@@ -1,17 +1,23 @@
 <template>
-  <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+  <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 
+    bg-gradient-to-b from-white to-gray-50 
+    dark:from-gray-800 dark:to-gray-700">
+    
     <img
       src="/ezra.jpg"
       alt="Foto Ezra"
       class="w-32 h-32 rounded-full border-4 border-gray-300 shadow-md mb-4 animate-fade-in"
     />
-    <h1 class="text-3xl md:text-5xl font-bold mb-2 animate-slide-in">Mochamad Ezra Saptiawan</h1>
-    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 animate-fade-in delay-200">
+    <h1 class="text-3xl md:text-5xl font-bold mb-2 animate-slide-in">
+      Mochamad Ezra Saptiawan
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-200 animate-fade-in delay-200">
       Frontend & Fullstack Developer | Administrator Kantor
     </p>
     <a
       href="#projects"
-      class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition-all animate-fade-in delay-300"
+      class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow 
+      hover:bg-blue-700 transition-all animate-fade-in delay-300"
     >
       Lihat Proyek Saya
     </a>
