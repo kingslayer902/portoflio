@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 
-    bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    bg-gradient-to-b from-white to-gray-100 ">
 
     <img
       src="/ezra.jpg"
