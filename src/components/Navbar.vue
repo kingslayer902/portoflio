@@ -1,10 +1,19 @@
 <template>
-  <nav class="bg-white shadow-md p-4 flex justify-between">
-    <h1 class="text-xl font-bold">Ezra's Portfolio</h1>
-    <ul class="flex gap-4">
-      <RouterLink to="/" class="hover:text-blue-600">Home</RouterLink>
-      <RouterLink to="/about" class="hover:text-blue-600">About</RouterLink>
-      <RouterLink to="/projects" class="hover:text-blue-600">Projects</RouterLink>
-    </ul>
-  </nav>
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Ezra.dev</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#hero" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600 transition">Tentang</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 transition">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 transition">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 </template>
+
+<script>
+export default {
+  name: 'Navbar',
+};
+</script>

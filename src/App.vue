@@ -1,12 +1,29 @@
 <template>
-  <main class="font-sans text-gray-800 bg-gray-50 min-h-screen">
+  <div>
     <Navbar />
-    <RouterView />
+
+    <!-- Section per bagian (pakai id buat navigasi scroll) -->
+    <HeroSection />
+    <AboutSection />
+    <ProjectsSection/>
     <Footer />
-  </main>
+  </div>
 </template>
 
-<script setup>
-import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+<script>
+import Navbar from './components/Navbar.vue';
+import AboutSection from './components/AboutSection.vue';
+import ProjectsSection from './components/ProjectSection.vue';
+import Footer from './components/Footer.vue';
+import HeroSection from './components/heroSection.vue';
+
+export default {
+  components: {
+    Navbar,
+    HeroSection,
+    AboutSection,
+    ProjectsSection,
+    Footer
+  }
+};
 </script>
