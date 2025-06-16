@@ -1,29 +1,25 @@
 <template>
-  <div>
-    <Navbar />
-
-    <!-- Section per bagian (pakai id buat navigasi scroll) -->
+  <div class="font-sans text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900">
     <HeroSection />
+    <ProjectSection />
     <AboutSection />
-    <ProjectsSection/>
-    <Footer />
+    <FooterSection />
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue';
-import AboutSection from './components/AboutSection.vue';
-import ProjectsSection from './components/ProjectSection.vue';
-import Footer from './components/Footer.vue';
-import HeroSection from './components/HeroSection.vue';
+import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import ProjectSection from './components/ProjectSection.vue'
+import FooterSection from './components/FooterSection.vue'
 
 export default {
+  name: 'App',
   components: {
-    Navbar,
     HeroSection,
     AboutSection,
-    ProjectsSection,
-    Footer
+    ProjectSection,
+    FooterSection
   }
-};
+}
 </script>

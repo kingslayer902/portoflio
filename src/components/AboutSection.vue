@@ -1,6 +1,7 @@
 <template>
   <section id="about" class="py-20 px-6 bg-white max-w-5xl mx-auto">
     <h2 class="text-2xl font-bold mb-6 text-center">Tentang Saya</h2>
+    
     <div class="grid md:grid-cols-2 gap-10">
       <div>
         <h3 class="text-xl font-semibold mb-2">Informasi Pribadi</h3>
@@ -27,18 +28,8 @@
     <div class="mt-10">
       <h3 class="text-xl font-semibold mb-4">Pengalaman Kerja</h3>
 
+      <!-- IFCA DI ATAS -->
       <div class="mb-6">
-        <p class="font-medium">PT. Moedtjibaba & Sons (Admin) | 2023 - 2024</p>
-        <ul class="list-disc ml-5 text-sm">
-          <li>Mengelola dokumen dan arsip kantor</li>
-          <li>Input dan rekap data administrasi</li>
-          <li>Membuat laporan mingguan dan bulanan</li>
-          <li>Komunikasi internal dan eksternal</li>
-          <li>Pengarsipan dan penjadwalan rutin</li>
-        </ul>
-      </div>
-
-      <div>
         <p class="font-medium">IFCA PROPERTY 365 (Fullstack Developer) | 2024 - 2025</p>
         <ul class="list-disc ml-5 text-sm">
           <li>Mengembangkan frontend dengan Vue.js & Tailwind CSS</li>
@@ -46,6 +37,18 @@
           <li>Implementasi autentikasi & dashboard admin</li>
           <li>Bug fixing dan kerja tim lewat GitHub</li>
           <li>Deployment ke Netlify & Render</li>
+        </ul>
+      </div>
+
+      <!-- MOEDTJIBABA DI BAWAH -->
+      <div>
+        <p class="font-medium">PT. Moedtjibaba & Sons (Admin) | 2023 - 2024</p>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Mengelola dokumen dan arsip kantor</li>
+          <li>Input dan rekap data administrasi</li>
+          <li>Membuat laporan mingguan dan bulanan</li>
+          <li>Komunikasi internal dan eksternal</li>
+          <li>Pengarsipan dan penjadwalan rutin</li>
         </ul>
       </div>
     </div>
