@@ -1,10 +1,10 @@
 <template>
   <div class="font-sans text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900">
+    <Navbar />
     <HeroSection />
     <ProjectSection />
     <AboutSection />
     <FooterSection />
-    <Navbar/>
   </div>
 </template>
 

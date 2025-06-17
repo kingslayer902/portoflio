@@ -1,27 +1,22 @@
 <template>
   <section
-    class="min-h-screen flex flex-col items-center justify-center text-center p-6 
-      bg-gradient-to-b from-white to-gray-100"
+    id="hero"
+    class="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-gradient-to-b from-white to-gray-100"
   >
     <img
       src="/ezra.jpg"
       alt="Foto Ezra"
       class="w-32 h-32 rounded-full border-4 border-gray-300 shadow-md mb-4 animate-fade-in"
     />
-    <h1
-      class="text-3xl md:text-5xl font-bold mb-2 text-gray-800 animate-slide-in"
-    >
+    <h1 class="text-3xl md:text-5xl font-bold mb-2 text-gray-800 animate-slide-in">
       Mochamad Ezra Saptiawan
     </h1>
-    <p
-      class="text-lg md:text-xl text-gray-700 animate-fade-in delay-200"
-    >
+    <p class="text-lg md:text-xl text-gray-700 animate-fade-in delay-200">
       Frontend & Fullstack Developer | Administrator Kantor
     </p>
     <a
       href="#projects"
-      class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow 
-        hover:bg-blue-700 transition-all animate-fade-in delay-300"
+      class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition-all animate-fade-in delay-300"
     >
       Lihat Proyek Saya
     </a>
@@ -45,6 +40,7 @@ export default {
     transform: translateY(0);
   }
 }
+
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -55,15 +51,19 @@ export default {
     transform: translateY(0);
   }
 }
+
 .animate-fade-in {
   animation: fade-in 0.8s ease forwards;
 }
+
 .animate-slide-in {
   animation: slide-in 1s ease forwards;
 }
+
 .delay-200 {
   animation-delay: 0.2s;
 }
+
 .delay-300 {
   animation-delay: 0.3s;
 }

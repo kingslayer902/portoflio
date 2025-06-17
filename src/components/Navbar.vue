@@ -17,16 +17,16 @@
         </svg>
       </button>
 
-      <!-- Menu Navigasi -->
+      <!-- Menu Navigasi Desktop -->
       <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
-        <li><a href="#herosection" class="hover:text-blue-600 transition cursor-pointer">Home</a></li>
+        <li><a href="#hero" class="hover:text-blue-600 transition cursor-pointer">Home</a></li>
         <li><a href="#about" class="hover:text-blue-600 transition cursor-pointer">Tentang</a></li>
         <li><a href="#projects" class="hover:text-blue-600 transition cursor-pointer">Project</a></li>
-        <li><a href="#footersection" class="hover:text-blue-600 transition cursor-pointer">Kontak</a></li>
+        <li><a href="#footer" class="hover:text-blue-600 transition cursor-pointer">Kontak</a></li>
       </ul>
     </nav>
 
-    <!-- Menu Mobile -->
+    <!-- Menu Navigasi Mobile -->
     <transition name="fade">
       <ul v-if="isOpen" class="md:hidden bg-white px-6 pb-4 space-y-4 text-sm font-medium text-gray-800">
         <li><a href="#hero" class="block hover:text-blue-600 transition" @click="isOpen = false">Home</a></li>
