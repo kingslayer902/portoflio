@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 w-full bg-white shadow z-50 transition-colors duration-300">
+  <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur shadow z-50 transition duration-300">
     <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigasi utama">
       <h1 class="text-xl font-bold text-blue-600">Ezra.dev</h1>
 
@@ -17,22 +17,22 @@
         </svg>
       </button>
 
-      <!-- Menu Navigasi Desktop -->
+      <!-- Menu Desktop -->
       <ul class="hidden md:flex space-x-6 text-sm font-medium text-gray-800">
-        <li><a href="#hero" class="hover:text-blue-600 transition cursor-pointer">Home</a></li>
-        <li><a href="#about" class="hover:text-blue-600 transition cursor-pointer">Tentang</a></li>
-        <li><a href="#projects" class="hover:text-blue-600 transition cursor-pointer">Project</a></li>
-        <li><a href="#footer" class="hover:text-blue-600 transition cursor-pointer">Kontak</a></li>
+        <li><a href="#hero" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600 transition">Tentang</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 transition">Project</a></li>
+        <li><a href="#footer" class="hover:text-blue-600 transition">Kontak</a></li>
       </ul>
     </nav>
 
-    <!-- Menu Navigasi Mobile -->
+    <!-- Menu Mobile -->
     <transition name="fade">
-      <ul v-if="isOpen" class="md:hidden bg-white px-6 pb-4 space-y-4 text-sm font-medium text-gray-800">
-        <li><a href="#hero" class="block hover:text-blue-600 transition" @click="isOpen = false">Home</a></li>
-        <li><a href="#about" class="block hover:text-blue-600 transition" @click="isOpen = false">Tentang</a></li>
-        <li><a href="#projects" class="block hover:text-blue-600 transition" @click="isOpen = false">Project</a></li>
-        <li><a href="#footer" class="block hover:text-blue-600 transition" @click="isOpen = false">Kontak</a></li>
+      <ul v-if="isOpen" class="md:hidden bg-white px-6 pb-4 space-y-4 text-sm font-medium text-gray-800 border-t border-gray-200">
+        <li><a href="#hero" class="block hover:text-blue-600" @click="isOpen = false">Home</a></li>
+        <li><a href="#about" class="block hover:text-blue-600" @click="isOpen = false">Tentang</a></li>
+        <li><a href="#projects" class="block hover:text-blue-600" @click="isOpen = false">Project</a></li>
+        <li><a href="#footer" class="block hover:text-blue-600" @click="isOpen = false">Kontak</a></li>
       </ul>
     </transition>
   </header>
@@ -50,10 +50,6 @@ export default {
 </script>
 
 <style scoped>
-html {
-  scroll-behavior: smooth;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.2s ease;

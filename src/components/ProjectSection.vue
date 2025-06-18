@@ -3,13 +3,13 @@
     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Project</h2>
 
     <div class="grid md:grid-cols-2 gap-6">
-      <!-- Proyek terbaru -->
+      <!-- Proyek 1 -->
       <div
-        class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+        class="bg-white p-6 rounded-lg shadow transition-transform duration-300 hover:shadow-lg hover:-translate-y-1"
       >
         <h3 class="font-semibold text-lg mb-2 text-gray-800">Dainsleif</h3>
         <p class="text-sm text-gray-700 mb-4">
-         Proyek ini dirancang untuk menciptakan platform yang mudah digunakan dengan integrasi berbagai fitur interaktif. Salah satu tantangan terbesar adalah mengelola koneksi live-chat secara real-time dan memastikan pengalaman pengguna yang mulus di berbagai perangkat. Dengan menggunakan Vue 3 dan Tailwind CSS, saya berhasil membangun antarmuka yang responsif dan estetik, sementara REST API memungkinkan integrasi yang lancar dengan backend. Proyek ini masih dalam tahap pengembangan, dengan rencana untuk menambah fitur lebih lanjut dan penyempurnaan UX/UI.
+          Proyek ini dirancang untuk menciptakan platform yang mudah digunakan dengan integrasi berbagai fitur interaktif. Salah satu tantangan terbesar adalah mengelola koneksi live-chat secara real-time dan memastikan pengalaman pengguna yang mulus di berbagai perangkat. Dengan menggunakan Vue 3 dan Tailwind CSS, saya berhasil membangun antarmuka yang responsif dan estetik, sementara REST API memungkinkan integrasi yang lancar dengan backend. Proyek ini masih dalam tahap pengembangan, dengan rencana untuk menambah fitur lebih lanjut dan penyempurnaan UX/UI.
         </p>
         <a
           href="https://relaxed-axolotl-9932ff.netlify.app/"
@@ -20,10 +20,9 @@
         </a>
       </div>
 
-      <!-- Contoh slot project lain (tinggal buka komentar & ganti konten) -->
-      
+      <!-- Proyek 2 -->
       <div
-        class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition"
+        class="bg-white p-6 rounded-lg shadow transition-transform duration-300 hover:shadow-lg hover:-translate-y-1"
       >
         <h3 class="font-semibold text-lg mb-2 text-gray-800">NexAC</h3>
         <p class="text-sm text-gray-700 mb-4">
@@ -37,11 +36,12 @@
           Lihat Project →
         </a>
       </div>
-      
     </div>
   </section>
 </template>
 
 <script>
-export default { name: 'ProjectSection' }
+export default {
+  name: 'ProjectSection',
+}
 </script>
