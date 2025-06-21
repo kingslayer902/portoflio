@@ -14,12 +14,30 @@
     <p class="text-lg md:text-xl text-gray-700 animate-fade-in delay-200">
       Frontend & Fullstack Developer · Administrator Kantor
     </p>
-    <a
-      href="#projects"
-      class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-all duration-300 animate-fade-in delay-300"
-    >
-      Lihat Proyek Saya
-    </a>
+
+    <div class="flex flex-wrap justify-center gap-4 mt-6 animate-fade-in delay-300">
+      <a
+        href="#projects"
+        class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+      >
+        Lihat Proyek Saya
+      </a>
+
+      <a
+        href="/cv-ezra.pdf"
+        download
+        class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow hover:bg-gray-300 hover:scale-105 transition-all duration-300"
+      >
+        Download CV
+      </a>
+
+      <a
+        href="mailto:saptiawanezra@gmail.com"
+        class="px-6 py-3 border border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300"
+      >
+        Contact Me
+      </a>
+    </div>
   </section>
 </template>
 

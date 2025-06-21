@@ -1,5 +1,7 @@
 <template>
-  <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur shadow z-50 transition duration-300">
+  <header
+    :class="['fixed top-0 left-0 w-full z-50 transition duration-300 backdrop-blur bg-white/90', { 'shadow-md': scrolled }]"
+  >
     <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigasi utama">
       <h1 class="text-xl font-bold text-blue-600">Ezra.dev</h1>
 
@@ -29,10 +31,10 @@
     <!-- Menu Mobile -->
     <transition name="fade">
       <ul v-if="isOpen" class="md:hidden bg-white px-6 pb-4 space-y-4 text-sm font-medium text-gray-800 border-t border-gray-200">
-        <li><a href="#hero" class="block hover:text-blue-600" @click="isOpen = false">Home</a></li>
-        <li><a href="#about" class="block hover:text-blue-600" @click="isOpen = false">Tentang</a></li>
-        <li><a href="#projects" class="block hover:text-blue-600" @click="isOpen = false">Project</a></li>
-        <li><a href="#footer" class="block hover:text-blue-600" @click="isOpen = false">Kontak</a></li>
+        <li><a href="#hero" class="block hover:text-blue-600" @click="closeMenu">Home</a></li>
+        <li><a href="#about" class="block hover:text-blue-600" @click="closeMenu">Tentang</a></li>
+        <li><a href="#projects" class="block hover:text-blue-600" @click="closeMenu">Project</a></li>
+        <li><a href="#footer" class="block hover:text-blue-600" @click="closeMenu">Kontak</a></li>
       </ul>
     </transition>
   </header>
@@ -43,7 +45,22 @@ export default {
   name: 'Navbar',
   data() {
     return {
-      isOpen: false
+      isOpen: false,
+      scrolled: false,
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      this.scrolled = window.scrollY > 10
+    },
+    closeMenu() {
+      this.isOpen = false
     }
   }
 }
@@ -57,5 +74,8 @@ export default {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 </style>
